@@ -114,29 +114,29 @@ enum Events
     EVENT_INTRO_4                   = 17
 };
 
-const uint32 gothikWaves[24][2] =
+const uint32 gothikWaves[16][2] =
 {
     {NPC_LIVING_TRAINEE,    20000},
     {NPC_LIVING_TRAINEE,    20000},
     {NPC_LIVING_TRAINEE,    10000},
     {NPC_LIVING_KNIGHT,     10000},
     {NPC_LIVING_TRAINEE,    15000},
-    {NPC_LIVING_KNIGHT,     10000},
+//    {NPC_LIVING_KNIGHT,     10000},
     {NPC_LIVING_TRAINEE,    15000},
-    {NPC_LIVING_TRAINEE,    0},
-    {NPC_LIVING_KNIGHT,     10000},
+//    {NPC_LIVING_TRAINEE,    0},
+//    {NPC_LIVING_KNIGHT,     10000},
     {NPC_LIVING_RIDER,      10000},
     {NPC_LIVING_TRAINEE,    5000},
-    {NPC_LIVING_KNIGHT,     15000},
-    {NPC_LIVING_RIDER,      0},
+//    {NPC_LIVING_KNIGHT,     15000},
+//    {NPC_LIVING_RIDER,      0},
     {NPC_LIVING_TRAINEE,    10000},
     {NPC_LIVING_KNIGHT,     10000},
     {NPC_LIVING_TRAINEE,    10000},
-    {NPC_LIVING_RIDER,      5000},
+//    {NPC_LIVING_RIDER,      5000},
     {NPC_LIVING_KNIGHT,     5000},
     {NPC_LIVING_TRAINEE,    20000},
-    {NPC_LIVING_RIDER,      0},
-    {NPC_LIVING_KNIGHT,     0},
+//    {NPC_LIVING_RIDER,      0},
+//    {NPC_LIVING_KNIGHT,     0},
     {NPC_LIVING_TRAINEE,    15000},
     {NPC_LIVING_TRAINEE,    29000},
     {0, 0}

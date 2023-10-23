@@ -430,7 +430,7 @@ public:
                             if (Player* p = itr->GetSource())
                                 if (p->IsAlive() && p != me->GetVictim() && p->GetGUID() != _offtankGUID && !p->IsGameMaster() && p->GetDistance(me) < 100.0f && !p->HasAura(SPELL_UNCONTROLLABLE_FRENZY))
                                     myList.push_back(p);
-                        Acore::Containers::RandomResize(myList, Is25ManRaid() ? 3 : 2);
+                        Acore::Containers::RandomResize(myList, Is25ManRaid() ? 2 : 2);
                         if (myList.size() > 1)
                         {
                             Talk(SAY_PACT_OF_THE_DARKFALLEN);

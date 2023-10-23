@@ -546,7 +546,8 @@ public:
             {
                 bool didHit = false;
                 CreatureAI* marrowgarAI = marrowgar->AI();
-                uint8 boneSpikeCount = uint8(GetCaster()->GetMap()->GetSpawnMode() & 1 ? 3 : 1);
+                //uint8 boneSpikeCount = uint8(GetCaster()->GetMap()->GetSpawnMode() & 1 ? 3 : 1);
+		uint8 boneSpikeCount = 1;
 
                 std::vector<Player*> validPlayers;
                 Map::PlayerList const& pList = marrowgar->GetMap()->GetPlayers();

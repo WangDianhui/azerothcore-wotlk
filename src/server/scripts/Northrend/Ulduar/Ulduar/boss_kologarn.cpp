@@ -71,8 +71,10 @@ enum KologarnSpells
     SPELL_ARM_SWEEP_25                  = 63983,
 
     // RIGHT ARM
-    SPELL_STONE_GRIP_10                 = 62166,
-    SPELL_STONE_GRIP_25                 = 63981,
+    //SPELL_STONE_GRIP_10                 = 62166,
+    //SPELL_STONE_GRIP_25                 = 63981,
+    SPELL_STONE_GRIP_10                 = 63766,
+    SPELL_STONE_GRIP_25                 = 63983,
     SPELL_RIDE_RIGHT_ARM_10             = 62056,
     SPELL_RIDE_RIGHT_ARM_25             = 63985,
 

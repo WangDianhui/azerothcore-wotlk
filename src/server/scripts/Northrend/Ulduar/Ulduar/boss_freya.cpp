@@ -84,8 +84,10 @@ enum FreyaSpells
     SPELL_FISTS_OF_STONE                        = 62344,
     SPELL_GROUND_TREMOR_10                      = 62325,
     SPELL_GROUND_TREMOR_25                      = 62932,
-    SPELL_PETRIFIED_BARK_10                     = 62337,
-    SPELL_PETRIFIED_BARK_25                     = 62933,
+    //SPELL_PETRIFIED_BARK_10                     = 62337,
+    //SPELL_PETRIFIED_BARK_25                     = 62933,
+    SPELL_PETRIFIED_BARK_10                     = 62325,
+    SPELL_PETRIFIED_BARK_25                     = 62932,
 
     // SNAPLASHER
     SPELL_HARDENED_BARK_10                      = 62664,

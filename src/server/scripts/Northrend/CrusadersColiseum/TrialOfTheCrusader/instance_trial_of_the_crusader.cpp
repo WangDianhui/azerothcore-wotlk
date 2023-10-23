@@ -1046,7 +1046,7 @@ public:
 
                         uint8 healersSubtracted = 2;
                         if( instance->GetSpawnMode() == RAID_DIFFICULTY_25MAN_NORMAL || instance->GetSpawnMode() == RAID_DIFFICULTY_25MAN_HEROIC )
-                            healersSubtracted = 1;
+                            healersSubtracted = 2;
                         for( uint8 i = 0; i < healersSubtracted; ++i )
                         {
                             uint8 pos = urand(0, vHealerEntries.size() - 1);
@@ -1080,7 +1080,7 @@ public:
                             vHealerEntries.erase(vHealerEntries.begin() + pos);
                         }
 
-                        if( instance->GetSpawnMode() == RAID_DIFFICULTY_10MAN_NORMAL || instance->GetSpawnMode() == RAID_DIFFICULTY_10MAN_HEROIC )
+                        //if( instance->GetSpawnMode() == RAID_DIFFICULTY_10MAN_NORMAL || instance->GetSpawnMode() == RAID_DIFFICULTY_10MAN_HEROIC )
                             for( uint8 i = 0; i < 4; ++i )
                                 vOtherEntries.erase(vOtherEntries.begin() + urand(0, vOtherEntries.size() - 1));
 

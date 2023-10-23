@@ -35,7 +35,8 @@ enum Spells
 {
     // Other spells
     SPELL_INCINERATE                                       = 23308,   //Incinerate 23308, 23309
-    SPELL_TIMELAPSE                                        = 23310,   //Time lapse 23310, 23311(old threat mod that was removed in 2.01)
+    //SPELL_TIMELAPSE                                        = 23310,   //Time lapse 23310, 23311(old threat mod that was removed in 2.01)
+    SPELL_TIMELAPSE                                        = 23128,   //Change Time lapse to Frenzy
     SPELL_CORROSIVEACID                                    = 23313,   //Corrosive Acid 23313, 23314
     SPELL_IGNITEFLESH                                      = 23315,   //Ignite Flesh 23315, 23316
     SPELL_FROSTBURN                                        = 23187,   //Frost burn 23187, 23189

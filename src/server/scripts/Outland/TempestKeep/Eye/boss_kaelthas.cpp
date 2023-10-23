@@ -66,9 +66,11 @@ enum Spells
     SPELL_FIREBALL                      = 36805,
     SPELL_ARCANE_DISRUPTION             = 36834,
     SPELL_PHOENIX                       = 36723,
-    SPELL_MIND_CONTROL                  = 36797,
+    //SPELL_MIND_CONTROL                  = 36797,
+    SPELL_MIND_CONTROL                  = 36805,
     SPELL_SHOCK_BARRIER                 = 36815,
     SPELL_PYROBLAST                     = 36819,
+    //SPELL_PYROBLAST                     = 36805,
     SPELL_FLAME_STRIKE                  = 36735,
     SPELL_FLAME_STRIKE_DAMAGE           = 36731,
 
@@ -98,7 +100,8 @@ enum Spells
     SPELL_GRAVITY_LAPSE_TELEPORT1       = 35966,
     SPELL_GRAVITY_LAPSE_KNOCKBACK       = 34480,
     SPELL_GRAVITY_LAPSE_AURA            = 39432,
-    SPELL_SUMMON_NETHER_VAPOR           = 35865,
+    //SPELL_SUMMON_NETHER_VAPOR           = 35865,
+    SPELL_SUMMON_NETHER_VAPOR           = 36805,    
     SPELL_NETHER_BEAM                   = 35869,
     SPELL_NETHER_BEAM_DAMAGE            = 35873,
 

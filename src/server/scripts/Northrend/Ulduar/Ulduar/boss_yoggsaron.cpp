@@ -822,7 +822,7 @@ public:
                     }
                 case EVENT_SARA_P2_MALADY:
                     me->CastCustomSpell(SPELL_MALADY_OF_THE_MIND, SPELLVALUE_MAX_TARGETS, 1, me, false);
-                    events.Repeat(20s);
+                    events.Repeat(200s);
                     break;
                 case EVENT_SARA_P2_PSYCHOSIS:
                     if ((urand(0, 9)) == 0)  // Rarely said (as it's casted every 3.5s)
@@ -830,7 +830,7 @@ public:
                         Talk(SAY_SARA_PSYCHOSIS_HIT);
                     }
                     me->CastCustomSpell(SPELL_PSYCHOSIS, SPELLVALUE_MAX_TARGETS, 1, me, false);
-                    events.Repeat(3500ms);
+                    events.Repeat(60s);
                     break;
                 case EVENT_SARA_P2_DEATH_RAY:
                     Talk(SAY_SARA_DEATH_RAY);
@@ -839,28 +839,31 @@ public:
                     break;
                 case EVENT_SARA_P2_SUMMON_T1: // CRUSHER
                     SpawnTentacle(NPC_CRUSHER_TENTACLE);
-                    events.RepeatEvent((50000 + urand(0, 10000)) * _summonSpeed);
+                    events.RepeatEvent((150000 + urand(0, 10000)) * _summonSpeed);
                     break;
                 case EVENT_SARA_P2_SUMMON_T2: // CONSTRICTOR
                     SpawnTentacle(NPC_CONSTRICTOR_TENTACLE);
-                    events.RepeatEvent((15000 + urand(0, 5000)) * _summonSpeed);
+                    events.RepeatEvent((500000 + urand(0, 5000)) * _summonSpeed);
                     break;
                 case EVENT_SARA_P2_SUMMON_T3: // CORRUPTOR
                     SpawnTentacle(NPC_CORRUPTOR_TENTACLE);
-                    events.RepeatEvent((30000 + urand(0, 10000)) * _summonSpeed);
+                    events.RepeatEvent((900000 + urand(0, 10000)) * _summonSpeed);
                     break;
                 case EVENT_SARA_P2_BRAIN_LINK:
                     me->CastCustomSpell(SPELL_BRAIN_LINK, SPELLVALUE_MAX_TARGETS, 1, me, false);
                     events.Repeat(30s);
                     break;
                 case EVENT_SARA_P2_OPEN_PORTALS:
-                    {
-                        AddPortals();
-                        EntryCheckPredicate pred(NPC_YOGG_SARON);
-                        summons.DoAction(ACTION_YOGG_SARON_OPEN_PORTAL_YELL, pred);
-                        events.Repeat(80s);
-                        break;
-                    }
+                    //{
+                    //    AddPortals();
+                    //    EntryCheckPredicate pred(NPC_YOGG_SARON);
+                    //    summons.DoAction(ACTION_YOGG_SARON_OPEN_PORTAL_YELL, pred);
+                    //    events.Repeat(80s);
+                    //    break;
+                    //}
+		    if (me->GetInstanceScript())
+                        if(Creature* sara = ObjectAccessor::GetCreature(*me, me->GetInstanceScript()->GetGuidData(NPC_SARA)))
+                            sara->AI()->DoAction(ACTION_BRAIN_DAMAGED);
                 case EVENT_SARA_P2_REMOVE_STUN:
                     {
                         me->RemoveAura(SPELL_SHATTERED_ILLUSION);

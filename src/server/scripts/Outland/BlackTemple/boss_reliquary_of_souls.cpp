@@ -65,7 +65,8 @@ enum Spells
     // Desire
     SPELL_AURA_OF_DESIRE                = 41350,
     SPELL_AURA_OF_DESIRE_DAMAGE         = 41352,
-    SPELL_RUNE_SHIELD                   = 41431,
+    //SPELL_RUNE_SHIELD                   = 41431,
+    SPELL_RUNE_SHIELD                   = 41305,
     SPELL_DEADEN                        = 41410,
     SPELL_SPIRIT_SHOCK                  = 41426,
 

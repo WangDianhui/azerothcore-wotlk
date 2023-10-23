@@ -398,7 +398,7 @@ public:
                         std::random_device rd;
                         std::shuffle(begin, end, std::default_random_engine{rd()});
 
-                        for (uint8 i = 0; i < RAID_MODE<uint8>(0, 1, 1, 3) && i < validPlayers.size(); i++)
+                        for (uint8 i = 0; i < RAID_MODE<uint8>(0, 1, 1, 1) && i < validPlayers.size(); i++)
                         {
                             Unit* target = validPlayers[i];
                             me->CastSpell(target, SPELL_DOMINATE_MIND_25, true);
@@ -439,10 +439,10 @@ public:
                 case EVENT_SPELL_SUMMON_SHADE:
                     {
                         uint8 count = 1;
-                        if (GetDifficulty() == RAID_DIFFICULTY_25MAN_NORMAL)
-                            count = 2;
-                        else if (GetDifficulty() == RAID_DIFFICULTY_25MAN_HEROIC)
-                            count = 3;
+                        //if (GetDifficulty() == RAID_DIFFICULTY_25MAN_NORMAL)
+                        //    count = 2;
+                        //else if (GetDifficulty() == RAID_DIFFICULTY_25MAN_HEROIC)
+                        //    count = 3;
 
                         std::list<Unit*> targets;
                         SelectTargetList(targets, count, SelectTargetMethod::Random, 0, NonTankTargetSelector(me, true));

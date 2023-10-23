@@ -49,7 +49,8 @@ enum JaraxxusNPCs
 enum JaraxxusSpells
 {
     SPELL_NETHER_POWER                  = 66228,
-    SPELL_INCINERATE_FLESH              = 66237,
+    //SPELL_INCINERATE_FLESH              = 66237,
+    SPELL_INCINERATE_FLESH              = 66532,
     SPELL_FEL_FIREBALL                  = 66532,
     SPELL_FEL_LIGHTNING                 = 66528,
     SPELL_TOUCH_OF_JARAXXUS             = 66209,
